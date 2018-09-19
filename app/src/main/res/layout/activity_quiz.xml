@@ -8,58 +8,202 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ToggleButton
-            android:id="@+id/toggleButton1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textOn="1"
-            android:textOff="1"
-            android:tag="1"
-            android:text="ToggleButton" />
+            <ToggleButton
+                android:id="@+id/toggleButton1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOn="1"
+                android:textOff="1"
+                android:tag="1"
+                android:text="ToggleButton" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textOn="2"
-            android:textOff="2"
-            android:tag="2"
-            android:text="ToggleButton" />
+            <ToggleButton
+                android:id="@+id/toggleButton2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOn="2"
+                android:textOff="2"
+                android:tag="2"
+                android:text="ToggleButton" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textOn="3"
-            android:textOff="3"
-            android:tag="3"
-            android:text="ToggleButton" />
+            <ToggleButton
+                android:id="@+id/toggleButton3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOn="3"
+                android:textOff="3"
+                android:tag="3"
+                android:text="ToggleButton" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textOn="4"
-            android:textOff="4"
-            android:tag="4"
-            android:text="ToggleButton" />
+            <ToggleButton
+                android:id="@+id/toggleButton4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOn="4"
+                android:textOff="4"
+                android:tag="4"
+                android:text="ToggleButton" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton5"
-            android:layout_width="0dp"
+            <ToggleButton
+                android:id="@+id/toggleButton5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOn="5"
+                android:textOff="5"
+                android:tag="5"
+                android:text="ToggleButton" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButton6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOn="6"
+                android:textOff="6"
+                android:tag="6"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOn="7"
+                android:textOff="7"
+                android:tag="7"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOn="8"
+                android:textOff="8"
+                android:tag="8"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOn="9"
+                android:textOff="9"
+                android:tag="9"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOn="10"
+                android:textOff="10"
+                android:tag="10"
+                android:text="ToggleButton" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/score_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score: 0 / 0 (0 %)"/>
+
+        <TextView
+            android:id="@+id/question_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="24dp"
+            android:text="3 x 1 ="/>
+
+        <LinearLayout
+            android:id="@+id/answers_display"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:textOn="5"
-            android:textOff="5"
-            android:tag="5"
-            android:text="ToggleButton" />
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/answer1"
+                android:tag="101"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="answerPressed"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/answer2"
+                android:tag="102"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="answerPressed"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/answer3"
+                android:tag="103"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="answerPressed"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/answer4"
+                android:tag="104"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="answerPressed"
+                android:text="4" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="reset_quiz"
+            android:text="Reset" />
 
 
     </LinearLayout>
